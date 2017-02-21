@@ -1,3 +1,4 @@
+name             'nodejs-windows'
 maintainer       "NagaLakshmi"
 maintainer_email "nagalakshmi.n@cloudenablers.com"
 license          "Apache 2.0"
