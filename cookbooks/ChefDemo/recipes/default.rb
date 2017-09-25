@@ -15,7 +15,8 @@ def basic_install
 	FileUtils.remove_dir("C:\\temp\\ChefDemo.Install.1.0.0")
 
 
-	nuget_install_cmd = "\\\\nvinetwin10-msd\\Artifactory\\NuGet\\tools\\nuget.exe install -Source \\\\nvinetwin10-msd\\Artifactory\\ ChefDemo.Install -Version 1.0.0 -OutputDirectory C:\\temp\\"
+	#nuget_install_cmd = "\\\\nvinetwin10-msd\\Artifactory\\NuGet\\tools\\nuget.exe install -Source \\\\nvinetwin10-msd\\Artifactory\\ ChefDemo.Install -Version 1.0.0 #-OutputDirectory C:\\temp\\"
+	nuget_install_cmd = "\\\\nvinetwin10-msd\\Artifactory\\NuGet\\tools\\nuget.exe install -Source \\\\nvinetwin10-msd\\Artifactory\\ChefDemo.Install.1.0.0 -OutputDirectory C:\\temp\\"
 	Chef::Log.info("Executing nuget: #{nuget_install_cmd}")
 	exit_code = `#{nuget_install_cmd}`
 	Chef::Log.info("Exit code - Nuget : #{exit_code}")
